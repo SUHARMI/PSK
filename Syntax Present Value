@@ -1,0 +1,37 @@
+setwd("E:\\KULIAH\\PSK")
+present value
+Bunga Tunggal
+fungsi_k <- function(A, i, t){
+  cari_k = A/(1+(i*t))
+  return(cari_k)
+}
+fungsi_k(3500, 0.07, 4)
+
+Bunga Majemuk Tahunan
+fungsi_k <- function(A, i, t){
+  cari_k = (A/(1+i))^t
+  return(cari_k)
+}
+fungsi_k(3500, 0.07, 4)
+
+Bunga Tunggal Nominal Semester
+fungsi_k <- function(A, i, t){
+  cari_k = ((A/(1+0.035))^8)
+  return(cari_k)
+}
+fungsi_k(3500)
+
+Bunga Majemuk Kontinu
+fungsi_k <- function(A, i, t){
+  cari_k = (A/exp(0.28))
+  return(cari_k)
+}
+fungsi_k(3500)
+
+Bunga Majemuk Kontinu
+fungsi_k <- function(A, i, t){
+  cari_k = (A/exp(1.386295))
+  return(cari_k)
+}
+fungsi_k(10000)
+
