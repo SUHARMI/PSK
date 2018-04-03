@@ -1,0 +1,30 @@
+setwd("E:\\KULIAH\\PSK")
+Bunga Majemuk tahunan
+nilaiakumulasi <- function(k, i, t){
+  akumulasi = k*(1+i)^t
+  return(akumulasi)
+}
+nilakumulasi(2000, 0.08, 4)
+
+bunga majemuk nominal semester
+nilakumulasi(2000, 0.08, 4)
+nilaiakumulasi<- function(k, i, t, m){
+  akumulasi = k*(1+0.04)^8
+  return(akumulasi)
+}
+nilaiakumulasi(2000)
+
+bunga majemuk tunggal
+nilaiakumulasi<- function(k, i, t){
+  akumulasi = k*(1+0.32)
+  return(akumulasi)
+}
+nilaiakumulasi(2000)
+
+bunga majemuk kontinu
+nilaiakumulasi<- function(k, e, i, t){
+  akumulasi = (k*e)^(i*t)
+  return(akumulasi)
+}
+nilaiakumulasi(2000, 2.7182818285, 0.08, 4)
+
