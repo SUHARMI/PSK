@@ -1,0 +1,19 @@
+setwd("E:\\KULIAH\\PSK")
+annuitasakhir <- function(i){
+  mencariv = 1/(1+i)
+return(mencariv)
+}
+annuitasakhir(0.08)
+
+
+annuitasakhir1 <- function(v){
+  akumulasiAAK = (2000*((1-v^4)/0.08))
+  return(akumulasiAAK)
+}
+annuitasakhir1(0.9259259)
+
+annuitasakhir2 <- function(k, n, i){
+  akumulasiAAK2 = (k*((((1+i)^n)-1)/i))
+  return(akumulasiAAK2)
+}
+annuitasakhir2(2000, 4, 0.08)
