@@ -1,0 +1,42 @@
+setwd("E:\\KULIAH\\PSK")
+bunga tungga
+fungsibunga <- function(A, k, t){
+  bunga = ((A/k)-1)/t
+  return(bunga)
+}
+fungsibunga(3500, 2000, 4)
+
+bunga majumek tahunan
+fungsibunga <- function(A, k, t){
+  bunga = (((A/k)^(1/t))-1)
+  return(bunga)
+}
+fungsibunga(3500, 2000, 4)
+
+bunga majemuk nominal semester
+fungsibunga <- function(A, k, t, m){
+  bunga = ((A/k)^0.125-1)*2
+  return(bunga)
+}
+fungsibunga(3500, 2000)
+
+Bunga Majemuk Kontinu
+fungsibunga <- function(A, k, t){
+  bunga = log(A/k)/t 
+  return(bunga)
+}
+fungsibunga(3500, 2000, 4)
+
+bunga majemuk nominal semester
+fungsibunga <- function(A, k, t, m){
+  bunga = ((A/k)^(0.0333333333)-1)*2
+  return(bunga)
+}
+fungsibunga(300, 100)
+
+Bunga Majemuk Kontinu
+fungsibunga <- function(A, k, t){
+  bunga = log(A/k)/t 
+  return(bunga)
+}
+fungsibunga(4000, 500, 30)
